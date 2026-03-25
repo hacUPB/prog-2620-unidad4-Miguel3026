@@ -14,6 +14,18 @@ mayor = max(lista)
 veces = lista.count(mayor)
 mes = lista.index(mayor)
 
-print(f"El {mayor} esta {veces} en la lista")
-print(f"Se vendieron mas autos en {meses[mes]}")
-print(f"Se vendieron {mayor} autos")
+if veces > 1:
+    lista_meses = []
+    for valor in range(len(lista)):
+        if lista[i] == mayor:
+            lista_meses.append(i)
+
+    print(f"venta mayores en:")
+
+for mes in lista_meses:
+    print(f"{meses[mes]}")
+
+else: 
+    mes = lista.index(mayor)
+    print(f"Mayor venta en {meses[mes]}")
+
