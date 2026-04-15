@@ -10,4 +10,4 @@
 ![Registro aeronave](../imagenes/Captura%20de%20pantalla%202026-04-15%20105555.png)
 
 ## Uso de IA
-Se utilizo IA para la parte estetica del codigo en los print y correccion de logica en la nueva función pues su integracion fue apresurada
+Se utilizo IA para la parte estetica del codigo en los print y correccion de logica en la nueva función pues su integracion fue apresurada.
