@@ -1,6 +1,3 @@
-# Inicio del programa
-
-# Lista donde se guardarán las aeronaves
 aeronaves = []
 
 # Bucle para ingresar al menos 3 aeronaves
@@ -32,7 +29,6 @@ for i in range(3):
             "limite": limite
         }
         
-        # Guardar componente en la lista
         componentes.append(componente)
     
     # Diccionario de la aeronave
@@ -46,14 +42,11 @@ for i in range(3):
     # Guardar aeronave en la lista principal
     aeronaves.append(aeronave)
 
-# ==========================
-# CONSULTA DE MANTENIMIENTO
-# ==========================
 
 print("\n\n--- REPORTE DE MANTENIMIENTO ---")
 
 # Variable para saber si todo está bien
-todo_ok = True
+melo = True
 
 # Recorrer aeronaves
 for i in range(len(aeronaves)):
@@ -70,12 +63,12 @@ for i in range(len(aeronaves)):
         # Comparación
         if comp["horas_uso"] >= comp["limite"]:
             print("ALERTA:", comp["nombre"], "- requiere mantenimiento (", comp["horas_uso"], "/", comp["limite"], ")")
-            todo_ok = False
+            melo = False
         else:
             print("OK:", comp["nombre"], "- dentro del límite (", comp["horas_uso"], "/", comp["limite"], ")")
 
 # Mensaje final
-if todo_ok:
+if melo:
     print("\nTodo está en orden.")
 else:
     print("\nHay componentes que requieren mantenimiento.")
